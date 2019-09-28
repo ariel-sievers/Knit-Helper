@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Knit Helper</title>
+    <meta name="description" content="Keep track of rows, calculate your guage, and other useful features for knitting.">
+    <meta name="author" content="Ariel Sievers">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/ico"/>
+
+    <link rel="stylesheet" href="../CSS/Row_Counter.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/Layout.css" type="text/css">
+</head>
+
+<div class="rowCounterContainer">
+    <body>
+
+        <header>
+            <h1>Knit Helper</h1>
+            <h3>Keep track of rows, calculate your guage, and other useful features for knitting.</h3>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a class="active" href="Row_Counter.html">Row Counter</a></li>
+                    <li><a href="#">Guage Calculator</a></li>
+                    <li><a href="#">Tail Length Calculator</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <div id="setup" style="display: block;">
+                <h2>Row Counter</h2>
+                <h5>Count your rows with the option of repetitions.</h5>
+
+                <div class="container small">
+                    <div class="labelBox">
+                        <label class="lineHeight" for="start">Start on Row:</label><input type="number" name="start" id="start" value="0"><br>
+                        <label class="lineHeight" for="end">Total Rows:</label><input type="number" name="end" id="end" value="0">
+                    </div>
+                    <p><i>Enter 0 if you don't have a total number.</i></p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="repeat_YES_NO" onclick="showOptions()">
+                        <label for="repeat_YES_NO"></label>
+                        <p>Pattern Repeats</p>
+                    </div>
+                    <div class="labelBox">
+                        <div id="repeatOptions">
+                            <label class="lineHeight" for="repeat">Rows Per Each Repeat: </label><input type="number" value="0" name="repeat" id="repeat"><br>
+                            <label class="lineHeight" for="repeatStart">Repeat Starts on Row: </label><input type="number" value="0" name="repeatStart" id="repeatStart">
+                        </div>
+                    </div>
+                </div>
+                <button class="button" onclick="showProjectOrSetup(); loadProject()">Start Counting</button>
+            </div>
+
+            <div id="counter" style="display: none;">
+                <h2>Row Counter</h2>
+
+                <label id="rowTitle">You are on Row</label><br>
+                <span id="currRow">1</span><br>
+                <label id="rowTotal" style="display: block">
+                    out of <span id="total">1</span>  rows (<span id="percentTotal">0</span>% Complete)
+                </label><br>
+                <button class="button" onclick="showProjectOrSetup()">Go Back</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="../JS/Row_Counter.js"></script>
+    </body>
+</div>
+</html>

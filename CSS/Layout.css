@@ -1,0 +1,198 @@
+* { box-sizing: border-box; }
+
+@font-face {
+        font-family: 'satisfyregular';
+        src: url('../CSS/fonts/satisfy-regular-webfont.woff2') format('woff2'),
+             url('../CSS/fonts/satisfy-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: cursive;
+}
+
+@font-face {
+    font-family: 'big_shoulders_textmedium';
+    src: url('../CSS/fonts/bigshoulderstext-medium-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/bigshoulderstext-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'big_shoulders_textregular';
+    src: url('../CSS/fonts/bigshoulderstext-regular-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/bigshoulderstext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'big_shoulders_textsemibold';
+    src: url('../CSS/fonts/bigshoulderstext-semibold-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/bigshoulderstext-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lorabold';
+    src: url('../CSS/fonts/lora-bold-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/lora-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'loraregular';
+    src: url('../CSS/fonts/lora-regular-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    background-color: #e6e6e6;
+    width: 66%;
+    padding: 5px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    font-family: 'big_shoulders_textsemibold';
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #4d4d4d;
+    border-bottom: #ccc solid 5px;
+}
+
+#navbar .active {
+    background-color: #4d4d4d;
+    border-bottom: #ff8f66 solid 5px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+header {
+    margin: 0 auto;
+    background-color: #ff8f66;
+    width: 100%;
+}
+
+#description {
+    clear: both;
+}
+
+h1 {
+    font-family: 'satisfyregular';
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: 'big_shoulders_textsemibold';
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'big_shoulders_textregular';
+    font-weight: normal;
+}
+
+.container h3 {
+    font-family: 'big_shoulders_textmedium';
+    font-weight: normal;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'lorabold';
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h5, p, label {
+    font-family: 'loraregular';
+    font-weight: normal;
+}
+
+.button {
+    background-color: #ff8f66;
+    border: none;
+    color: #fff;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'big_shoulders_textsemibold';
+    font-weight: normal;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffb499;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+
