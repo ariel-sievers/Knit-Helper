@@ -3,6 +3,12 @@
     margin-top: 10px;
 }
 
+#repeatProgress {
+    display: none;
+    width: 50%;
+    margin: auto;
+}
+
 #setup {
     display: block;
 }
@@ -81,6 +87,7 @@ input[type=checkbox] {
     white-space: nowrap;
     display: inline;
     line-height: 15px;
+    font-size: 14px;
 }
 
 .labelBox {
@@ -100,6 +107,34 @@ input[type=checkbox] {
 
 .lineHeight {
     line-height: 35px;
+}
+
+.progress-bar-wrapper {
+    display: inline-box;
+    align-items: center;
+}
+
+.progress-bar {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: auto;
+    border: 5px solid #ff8f66;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.progress {
+    background: transparent;
+}
+
+.dot {
+    background: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
 }
 
 #currRow {
