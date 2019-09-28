@@ -41,7 +41,6 @@
          url('../CSS/fonts/lora-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -163,7 +162,7 @@ h5 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 h5, p, label {

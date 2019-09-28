@@ -102,3 +102,8 @@ input[type=checkbox] {
     line-height: 35px;
 }
 
+#currRow {
+    font: bold 72px 'lorabold';
+    color: #ff8f66;
+}
+

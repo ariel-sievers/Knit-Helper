@@ -39,7 +39,7 @@
 
                 <div class="container small">
                     <div class="labelBox">
-                        <label class="lineHeight" for="start">Start on Row:</label><input type="number" name="start" id="start" value="0"><br>
+                        <label class="lineHeight" for="start">Start on Row:</label><input type="number" name="start" id="start" value="1"><br>
                         <label class="lineHeight" for="end">Total Rows:</label><input type="number" name="end" id="end" value="0">
                     </div>
                     <p><i>Enter 0 if you don't have a total number.</i></p>
@@ -55,18 +55,22 @@
                         </div>
                     </div>
                 </div>
-                <button class="button" onclick="showProjectOrSetup(); loadProject()">Start Counting</button>
+                <button class="button" onclick="verify()">Start Counting</button>
             </div>
 
             <div id="counter" style="display: none;">
                 <h2>Row Counter</h2>
 
-                <label id="rowTitle">You are on Row</label><br>
-                <span id="currRow">1</span><br>
-                <label id="rowTotal" style="display: block">
-                    out of <span id="total">1</span>  rows (<span id="percentTotal">0</span>% Complete)
-                </label><br>
-                <button class="button" onclick="showProjectOrSetup()">Go Back</button>
+                <div class="container small">
+                    <label id="rowTitle" style="display: block">You are on Row</label><br>
+                    <label id="completeMessage" style="display: none">You're 100% complete!</label>
+                    <span id="currRow" style="display: block">1</span><br>
+                    <label id="rowTotal" style="display: block">
+                        out of <span id="total">1</span>  rows (<span id="percentTotal">0</span>% Complete)
+                    </label><br>
+                </div>
+                <button class="button" onclick="showProjectOrSetup(); reset()">Go Back</button>
+                <button class="button" id="addButton" onclick="addRow()" style="display: inline-block">Add Row</button>
             </div>
         </div>
         <script type="text/javascript" src="../JS/Row_Counter.js"></script>
