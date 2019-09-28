@@ -87,7 +87,10 @@ input[type=checkbox] {
     white-space: nowrap;
     display: inline;
     line-height: 15px;
-    font-size: 14px;
+}
+
+.container.small p i {
+    font-size: 12px;
 }
 
 .labelBox {
