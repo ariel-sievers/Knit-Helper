@@ -1,0 +1,16 @@
+.labelBox {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.labelBox input {
+    float: left;
+    text-align: right;
+    width: 5ch;
+}
+
+.labelBox label {
+    text-align: left;
+    width: 5px;
+    margin: 0 auto;
+}
