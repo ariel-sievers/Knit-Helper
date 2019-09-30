@@ -12,6 +12,10 @@
     <link rel="icon" href="favicon.ico" type="image/ico"/>
 
     <link rel="stylesheet" href="../CSS/Layout.css" type="text/css">
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="../CSS/Gauge_Calculator.css" type="text/css">
+>>>>>>> Gauge-Calculator
 </head>
 
 <body>
@@ -35,22 +39,22 @@
         <h5>Easily calculate your gauge, using your gauge and the pattern's.</h5>
 
         <div class="container small">
+            <h3>Your Gauge</h3>
             <div class="labelBox">
-                <h3>Your Gauge</h3>
-                <label class="lineHeight" for="yourStitches"><input type="number" name="yourStitches" id="yourStitches" value="0"> stitches</label><br>
-                <label class="lineHeight" for="yourInches"><input type="number" name="yourInches" id="yourInches" value="0"> inches</label>
+                <input type="number" name="yourStitches" id="yourStitches" value="0"> <label class="lineHeight" for="yourStitches">stitches</label><br>
+                <input type="number" name="yourInches" id="yourInches" value="0"><label class="lineHeight" for="yourInches">inches</label>
             </div>
+            <h3>Their Gauge</h3>
             <div class="labelBox">
-                <h3>Their Gauge</h3>
-                <label class="lineHeight" for="theirStitches"><input type="number" name="theirStitches" id="theirStitches" value="0"> stitches</label><br>
-                <label class="lineHeight" for="theirInches"><input type="number" name="theirInches" id="theirInches" value="0"> inches</label>
+                <input type="number" name="theirStitches" id="theirStitches" value="0"><label class="lineHeight" for="theirStitches">stitches</label><br>
+                <input type="number" name="theirInches" id="theirInches" value="0"><label class="lineHeight" for="theirInches">inches</label>
             </div>
             <button class="button" onclick="verify()">Calculate Gauge</button>
         </div>
         <div class="container small">
             <h3>Results</h3>
-            <label>Your Gauge: <span id="yourGauge"></span></label>
-            <label>You should <span id="increase_decrease"></span> by <span id="diffence"></span> stitches.</label>
+            <label class="lineHeight">Your Gauge: <span id="yourGauge"></span> stitches per inch</label><br>
+            <label class="lineHeight" id="results" style="display: none">You should <span id="increase_decrease"></span> by <span id="difference"></span> stitch<span id="plural"></span>.</label>
         </div>
     </div>
     <script type="text/javascript" src="../JS/Gauge_Calculator.js"></script>

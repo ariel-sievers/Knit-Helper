@@ -210,6 +210,7 @@ h5, p, label {
     white-space: nowrap;
     display: inline;
     line-height: 15px;
+    font-size: 14px;
 }
 
 .labelBox {
@@ -226,5 +227,4 @@ h5, p, label {
     float: right;
     padding-top: 5px;
 }
-
 
