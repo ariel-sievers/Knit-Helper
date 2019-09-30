@@ -74,42 +74,8 @@ input[type=checkbox] {
     margin: -10px auto;
 }
 
-.container.small {
-    text-align: center;
-    max-width: 50%;
-    min-width: 37%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-
-.container.small p {
-    white-space: nowrap;
-    display: inline;
-    line-height: 15px;
-}
-
 .container.small p i {
     font-size: 12pt;
-}
-
-.labelBox {
-    width: 75%;
-    margin-left: 5%;
-}
-
-.labelBox label {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.labelBox input {
-    float: right;
-    padding-top: 5px;
-}
-
-.lineHeight {
-    line-height: 35px;
 }
 
 .progress-bar-wrapper {
